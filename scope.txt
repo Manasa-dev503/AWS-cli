@@ -1,0 +1,63 @@
+1. what is the difference between block scope and scope chain.
+
+Ans. block scope enclosed with curlybraces ({}) and if,for,else,while blocks can have block scope.
+     
+     scope chain declared variables within the block.
+
+2.what is meant by function scope
+
+Ans. variables are declared inside a function have the local scope or function scope and that variables are accessed within the function only.
+
+3.what happened variable inside function and outside function have same name
+
+Ans. Interpreter gives priority to variable declared inside function (local variable).
+
+4. what is the output
+
+var n1 = 6
+{ 
+    var n1 = 9
+    console.log(n1) //9
+}
+console.log(n1) //9
+
+5. what is the output
+
+var n1 = 6
+{ 
+    let n1 = 9
+    console.log(n1)
+}
+console.log(n1)  //syntax error
+
+6. what is the output
+
+var n1 = 5
+function myFunction(){
+    var n1 = 9
+    console.log(n1) //9
+}
+myFunction()
+console.log(n1) //5
+
+7.what is the output
+
+var n1 = 5
+function myFunction(){
+    n1 = 9
+    console.log(n1) //9
+}
+myFunction()
+console.log(n1) //9
+
+8. var a=1;
+   function f(){
+       var b=2;
+      function n(){
+         var c=3;
+      }
+  }
+  
+From the above function what are the variables accessed within n function
+
+Ans. a,b,c
